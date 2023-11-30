@@ -2,7 +2,7 @@
 
 The concept of centrality aims at analyzing networks and finding the most important nodes in them. These can be individuals in social networks, super-spreaders of diseases or key infrastructure nodes in urban networks[^1]. In road networks, not only nodes are of importance, but the edges also. "Betweenness centrality is a key metric for assessing node and edge importance in networks. It is based on computing the share of shortest paths that pass each edge or node in relation to the total number of paths in a network. Thereby it reveals the relative importance of edges or nodes for enabling interaction within the network"[^2].
 
-This project implements multiple calculation methods for betweenness centrality, namely using the networkx package with either a shortest or fastest route type method and the geographically informed betweenness centrality (GIBC) with different routes sample sizes and either using random routes or using a population distribution based random route generation (PDBRRG).
+This project implements multiple calculation methods for betweenness centrality, namely the networkx package with either a shortest or fastest route type method and the geographically informed betweenness centrality (GIBC) with different route sample sizes and either using random routes or using a population distribution based random route generation (PDBRRG).
 
 ![Example image with graph on the left and GIBC on the right](img/example.png)
 
@@ -15,7 +15,7 @@ This project implements multiple calculation methods for betweenness centrality,
 ### 1. Download this repository
 
 ```console
-$ git clone https://courses.gistools.geog.uni-heidelberg.de/pd281/advgeo23.git
+$ git clone https://github.com/GrHalbgott/network-analysis.git
 $ cd network-analysis
 ```
 
@@ -106,8 +106,6 @@ This project is licensed under the GPL-3.0-or-later License - see the [LICENSE](
 ## Footnotes
 
 If you have any questions or encounter a specific problem, feel free to use the Issues section of this repository to get in touch with me. I am looking forward to your ideas and input!
-
-**Literature**
 
 [^1]: Heuvel, M.P. van den and Sporns, O. (2013) ‘Network hubs in the human brain’, Trends in Cognitive Sciences, 17(12), pp. 683–696. Available at: https://doi.org/10.1016/j.tics.2013.09.012.
 

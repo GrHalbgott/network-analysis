@@ -14,23 +14,24 @@ This project implements multiple calculation methods for betweenness centrality,
 
 ### 1. Download this repository
 
-```console
-$ git clone https://github.com/GrHalbgott/network-analysis.git
-$ cd network-analysis
+```shell
+git clone https://github.com/GrHalbgott/network-analysis.git
+cd network-analysis
 ```
 
 ### 2. Setup new virtual environment with all necessary dependencies
 
-```console
-$ [mamba or conda] env create -f environment.yml
-$ [mamba or conda] activate network-analysis
-$ poetry install
+```shell
+[mamba or conda] env create -f environment.yml
+[mamba or conda] activate network-analysis
+poetry install
 ```
 Poetry will detect and respect an existing virtual environment that has been externally activated and will install the dependencies into that environment.
 
 To update the packages to their latest suitable versions (and the poetry.lock file), run:
-```console
-$ poetry update
+
+```shell
+poetry update
 ```
 
 ## Data (optional)
@@ -57,15 +58,15 @@ To use this in the program, you have to specify the `-pop` flag (see below).
 
 **Example**:
 
-```console
-$ python src/main.py -aoi Heilbronn -m gibc -n 250 -pop
+```shell
+python src/main.py -aoi Heilbronn -m gibc -n 250 -pop
 ```
 This will calculate the **geographically informed betweenness centrality** for **250** random routes **based on the population distribution** in **Heilbronn, Germany** (skipping aoi file because none is found), using **fastest** (default with gibc) route types. The resulting files will be stored under **`./output/`** (default). The results can be seen [above](./README.md#network-analysis-using-betweenness-centrality-calculation).
 
 **Usage**:
 
-```console
-$ python src/main.py -h
+```shell
+python src/main.py -h
 
 usage: main.py [-h] -aoi Area of interest [-skip] [-pop] [-n Number of routes] [-m Method] [-rt Route type] [-out Output directory]
 
@@ -86,17 +87,19 @@ optional arguments:
 ## Testing
 
 In order to run the tests in `./src/tests/`, you will need to install pytest into the environment:
-```console
-$ [mamba or conda] install -n network-analysis pytest
+
+```shell
+[mamba or conda] install -n network-analysis pytest
 ```
 
 ## Contribution
 
 If you want to contribute code, please install the pre-commit package first to ensure that the code you provide suits the custom formatting rules before committing or creating a pull request.
 Any advice, proposal for improvement or question is welcome!
-```console
-$ [mamba or conda] install -n network-analysis pre-commit
-$ pre-commit install
+
+```shell
+[mamba or conda] install -n network-analysis pre-commit
+pre-commit install
 ```
 
 ## License
